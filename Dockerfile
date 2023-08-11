@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
 EXPOSE 80
 
 # Run ShortGPT.py when the container launches
-CMD ["python", "ShortGPT.py"]
+CMD ["python", "runShortGPT.py "]
