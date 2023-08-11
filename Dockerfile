@@ -3,7 +3,7 @@
 FROM python:3.8-slim-buster
 
 # Set the working directory in the container to /app
-WORKDIR /app
+WORKDIR /Demo3
 
 # Add the current directory contents into the container at /app
 ADD . /app
@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Make port 80 available to the world outside this container
-EXPOSE 80
+EXPOSE 7860
 
 # Run ShortGPT.py when the container launches
 CMD ["python", "runShortGPT.py "]
